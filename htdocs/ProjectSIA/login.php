@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 ?>
 
 <!DOCTYPE html>
@@ -13,11 +13,21 @@
 
 <body>
 
-    <form action="index.php">
-    <label>Username</label>
-    <input type="text" name="username">
+    <form action="index.php" method="post">
+        <label>Username</label>
+        <input type="text" name="username">
+        <label>Password</label>
+        <input type="password" name="password">
+        <button type="submit" name="submit">
+            <p>Login</p>
+        </button>
+        <a href="CreateAccount.php">Create Account</a>
+
     </form>
 
 </body>
 
 </html>
+
+
+<?php session_unset(); ?>
