@@ -39,7 +39,7 @@ echo "Hello Admin";
     while($row = mysqli_fetch_assoc($results)) {
     $user++;
     }
-  
+    
   
     ?>
 
