@@ -55,10 +55,15 @@ echo "Hello Admin";
                 $results = mysqli_query($conn, $sql);
                 while($row = mysqli_fetch_assoc($results)) {
                 ?>
+
                 <td> <?php echo $row['user_id'];?> </td>
                 <td> <?php echo $row['name'];?> </td>
                 <td> <?php echo $row['username'];?> </td>
                 <td> <?php echo $row['password'];?> </td>
+                <td>
+                    <button>Update</button>
+                    <button>Delete</button>
+                </td>
             </tr>
             <?php } ?>
 
@@ -75,17 +80,25 @@ echo "Hello Admin";
             </tr>
 
             <tr>
-                <?php
+                <?php   
+                
                 $sql = "SELECT * FROM staff";
                 $results = mysqli_query($conn, $sql);
                 while($row = mysqli_fetch_assoc($results)) {
                 ?>
-                <td> <?php echo $row['staff_id'];?> </td>
+                <td> <?php echo $row['staff_id'];?></td>
                 <td> <?php echo $row['staff_name'];?> </td>
                 <td> <?php echo $row['username'];?> </td>
-                <td> <?php echo $row['password'];?> </td>
+                <td> <?php echo $row['password'];?></td>
+                <td>
+                    <button>Update</button>
+                    <button>Delete</button>
+
+                </td>
             </tr>
-            <?php } ?>
+
+
+            <?php }  echo "$count"; ?>
 
 
 

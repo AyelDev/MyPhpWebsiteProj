@@ -1,5 +1,4 @@
 <?php
-session_start();
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +11,11 @@ session_start();
 </head>
 
 <body>
+    <label>
+        <?php if( isset($_GET['error'])){
+        echo $_GET['error'];}
+        ?>
+    </label>
 
     <form action="Account_Verifier.php" method="post">
         <label>Username</label>
@@ -28,6 +32,3 @@ session_start();
 </body>
 
 </html>
-
-
-<?php session_unset(); ?>

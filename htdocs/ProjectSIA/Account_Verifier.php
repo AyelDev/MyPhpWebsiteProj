@@ -1,7 +1,8 @@
 <?php
 include "connection_db.php";
+session_start();
 
-
+$loginerror = "error";
 
 if(isset($_POST['submit'])){
     function validate($data){
@@ -21,7 +22,6 @@ if(isset($_POST['submit'])){
 
     if(empty($Username) && !empty($Password)){
         header("Location: login.php?error=Username is Required");
-        exit();
     }elseif(empty($Username) && empty($Password)){
         header("Location: login.php?error=Please fill out some form");
     }elseif(empty($Password) && !empty($Username)){

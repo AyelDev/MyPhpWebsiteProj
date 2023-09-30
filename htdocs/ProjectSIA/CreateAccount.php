@@ -12,6 +12,14 @@
 </head>
 
 <body>
+<label>
+        <?php if( isset($_GET['error'])){
+        echo $_GET['error'];}elseif(isset($_GET['success'])){
+            echo $_GET['success'];
+        }
+
+        ?>
+    </label>
     <form action="CreateAccount_Verifier.php" method="post">
 
         <label>Username</label>
