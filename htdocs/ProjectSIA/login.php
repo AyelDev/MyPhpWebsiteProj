@@ -13,7 +13,7 @@ session_start();
 
 <body>
 
-    <form action="index.php" method="post">
+    <form action="Account_Verifier.php" method="post">
         <label>Username</label>
         <input type="text" name="username">
         <label>Password</label>

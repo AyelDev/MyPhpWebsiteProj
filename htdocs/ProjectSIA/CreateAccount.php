@@ -1,4 +1,7 @@
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +12,8 @@
 </head>
 
 <body>
-    <form action="Signup.php" method="post">
+    <form action="CreateAccount_Verifier.php" method="post">
+
         <label>Username</label>
         <input type="text" name="username" id="">
         <label>Password</label>
@@ -20,6 +24,7 @@
         <input type="text" name="name">
         <label>Select Type</label>
         <select name="type" id="cars">
+            <option value="choose">Choose</option>
             <option value="user">User</option>
             <option value="staff">Staff</option>
         </select>
