@@ -19,10 +19,12 @@ if(isset($_POST['username']) && isset($_POST['password'])){
         $resultAdmin = mysqli_query($conn, $sqlAdmin);
         
 
-    if(empty($Username)){
+    if(empty($Username) && !empty($Password)){
         header("Location: login.php?error=Username is Required");
         exit();
-    }elseif(empty($Password)){
+    }elseif(empty($Username) && empty($Password)){
+        header("Location: login.php?error=Please fill out some form");
+    }elseif(empty($Password) && !empty($Username)){
         header("Location: login.php?error=Password is Required");
         exit(); 
     }else{
@@ -58,9 +60,9 @@ if(isset($_POST['username']) && isset($_POST['password'])){
 </head>
 
 <body>
-    
-<p><?php echo "Hello " . $Name; ?></p>
-<a href="Logout.php">Logout</a>
+
+    <p><?php echo "Hello " . $Name; ?></p>
+    <a href="Logout.php">Logout</a>
 </body>
 
 </html>
