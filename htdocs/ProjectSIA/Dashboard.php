@@ -1,6 +1,13 @@
 <?php
 include "connection_db.php";
-echo "Hello Admin";
+include "config.php";
+
+//if directly access the Dashboard page will automatically directed to login page
+if (!isset($_SESSION['admin'])) {
+    header("Location: login.php"); // Redirect to the login page
+    exit;
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,13 +19,14 @@ echo "Hello Admin";
 </head>
 
 <body>
+    <a href="Admin_index.php">Home</a>
     <a href="Logout.php">Logout</a>
     <a href="Table.php" class="">Tables</a>
     <a href="Dashboard.php" class="">Dashboard</a>
 
     <h1></h1>
     <?php
-
+   
     $admin=0;    
     $sql = "SELECT * FROM admin";
     $results = mysqli_query($conn, $sql);
@@ -43,11 +51,13 @@ echo "Hello Admin";
   
     ?>
 
-<p>Number of Admin <?php echo "$admin";?></p>
-<p>Number of Staff <?php echo "$staff";?></p>
-<p>Number of User <?php echo "$user";?></p>
+    <p>Number of Admin <?php echo $admin;?></p>
+    <p>Number of Staff <?php echo $staff;?></p>
+    <p>Number of User <?php echo $user?></p>
 
 
 </body>
+<?php
+?>
 
 </html>

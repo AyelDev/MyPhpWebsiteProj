@@ -1,5 +1,13 @@
 <?php
 include "connection_db.php";
+session_start();
+
+
+//if directly access the index page will automatically directed to login page
+if (!isset($_SESSION['user'])) {
+    header("Location: login.php"); // Redirect to the login page
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +21,7 @@ include "connection_db.php";
 
 <body>
 
-    <p><?php echo "Hello " //. $Name; ?></p>
+    <p><?php echo isset($_SESSION['user']) ? "Hello " . $_SESSION['user'] : '' ;?></p>
     <a href="Logout.php">Logout</a>
 </body>
 

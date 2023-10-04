@@ -1,10 +1,9 @@
 <?php
 include "connection_db.php";
-session_start();
+include "config.php";
 
-$loginerror = "error";
-
-if(isset($_POST['submit'])){
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
+    //isset($_POST['submit'])
     function validate($data){
         $data = trim($data);
         $data = stripslashes($data);
@@ -14,11 +13,15 @@ if(isset($_POST['submit'])){
     $Username = validate($_POST['username']);
     $Password = validate($_POST['password']); 
     
-        $sqlUser = "SELECT * FROM user WHERE username='$Username' AND password='$Password'";
-        $result = mysqli_query($conn, $sqlUser);
-        $sqlAdmin = "SELECT * FROM admin WHERE username='$Username' AND password='$Password'";
-        $resultAdmin = mysqli_query($conn, $sqlAdmin);
-        
+    
+    $sqlUser = "SELECT * FROM user WHERE username='$Username' AND password='$Password'";
+    $result = mysqli_query($conn, $sqlUser);
+    $sqlAdmin = "SELECT * FROM admin WHERE username='$Username' AND password='$Password'";
+    $resultAdmin = mysqli_query($conn, $sqlAdmin);
+    $sqlStaff = "SELECT * FROM staff WHERE username='$Username' AND password='$Password'";
+    $resultStaff = mysqli_query($conn, $sqlStaff);
+
+      
 
     if(empty($Username) && !empty($Password)){
         header("Location: login.php?error=Username is Required");
@@ -28,20 +31,31 @@ if(isset($_POST['submit'])){
         header("Location: login.php?error=Password is Required");
         exit(); 
     }else{
-        
+
 
         if(mysqli_num_rows($result) > 0){
             $row = mysqli_fetch_assoc($result);
             $Name = $row['name'];
+            $_SESSION['user']=$Name;
             header("Location: index.php");
         }elseif(mysqli_num_rows($resultAdmin) > 0){
             $row = mysqli_fetch_assoc($resultAdmin);
-            $Name = $row['name'];
+            $adminName = $row['name'];
+            $_SESSION['admin']=$adminName;
             header("Location: Admin_index.php");
-        } else {
+            
+           
+        }elseif(mysqli_num_rows($resultStaff) > 0){
+            $row = mysqli_fetch_assoc($resultStaff);
+            $staffName = $row['name'];
+            $_SESSION['staff']=$staffName;  
+            header("Location: Staff_index.php");
+        }else{
             header("Location: login.php?error=Invalid Username or Password");
             exit();
         }
+
+
     }
 }else{
     header("Location: login.php?error");

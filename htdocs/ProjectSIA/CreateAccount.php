@@ -1,7 +1,3 @@
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +8,7 @@
 </head>
 
 <body>
-<label>
+    <label>
         <?php if( isset($_GET['error'])){
         echo $_GET['error'];}elseif(isset($_GET['success'])){
             echo $_GET['success'];
@@ -36,12 +32,13 @@
             <option value="user">User</option>
             <option value="staff">Staff</option>
         </select>
-        <a href="login.php">Back</a>
         <button type="submit" name="submit">
-        <p>Create</p>
+            <p>Create</p>
         </button>
-
+        <a href="login.php">Click here to log in!</a>
     </form>
+
+
 </body>
 
 </html>
