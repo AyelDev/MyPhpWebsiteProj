@@ -2,7 +2,6 @@
 include "connection_db.php";
 include "config.php";
 
-
 if(isset($_GET['id'])){
 
 $staff_id = $_GET['id'];
