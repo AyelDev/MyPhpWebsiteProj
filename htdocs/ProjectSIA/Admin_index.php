@@ -20,38 +20,50 @@ if (!isset($_SESSION['admin'])) {
 </head>
 
 <body>
-    <div class="mybackground"><br>
 
+    <div class="mybackground">
 
-
-        <div class="row">
-
-
-            <div class="col s2">
-                <div class="grid-example col s12 white card-panel">
-                    <h5><?php echo isset($_SESSION['admin']) ? "Hello Admin " . $_SESSION['admin'] : '' ; ?></h5>
+        <nav>
+            <div class="nav-wrapper white">
+                <div class="row">
+                    <div class="col s2">
+                        <i
+                            class="black-text left"><?php echo isset($_SESSION['admin']) ? "Hello Admin " . $_SESSION['admin'] : '' ; ?></i>
+                    </div>
                 </div>
-                <!-- Promo Content 1 goes here -->
-                <a href="Admin_index.php" class="white-text">Home</a><br>
-                <a href="Logout.php" class="white-text">Logout</a><br>
-                <a href="Table.php" class="white-text">Tables</a><br>
-                <a href="Dashboard.php" class="white-text">Dashboard</a>
+
+
+
 
             </div>
-            <div class="col s3">
-                <h1>asdsad</h1>
+
+            <!-- Navbar goes here -->
+
+            <!-- Page Layout here -->
+            <div class="row">
+
+                <div class="col s2">
+
+                    <ul class="left hide-on-med-and-down">
+
+                        <li><a href="Admin_index.php">Home</a></li><br>
+                        <li><a href="Table.php">Tables</a></li><br>
+                        <li><a href="Dashboard.php">Dashboard</a></li><br>
+                        <li><a class="white-text" href="Logout.php">Logout</a></li><br>
+                    </ul>
+                </div>
+
+                <div class="col s9 center">
+                    <!-- Teal page content  -->
+                    <h1>Hello this is for admin page.</h1>
+                </div>
             </div>
-
-
-
-        </div>
-
-
-
-
-
+        </nav>
     </div>
 
+
+
+ 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="materialize/js/materialize.js"></script>
 </body>

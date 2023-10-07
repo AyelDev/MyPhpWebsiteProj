@@ -13,20 +13,13 @@ if (!isset($_SESSION['admin'])) {
 <html lang="en">
 
 <head>
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css" media="screen,projection" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Page</title>
+    <title>Dashboard</title>
 </head>
 
-<body>
-    <a href="Admin_index.php">Home</a>
-    <a href="Logout.php">Logout</a>
-    <a href="Table.php" class="">Tables</a>
-    <a href="Dashboard.php" class="">Dashboard</a>
-
-    <h1></h1>
-    <?php
-   
+<?php
     $admin=0;    
     $sql = "SELECT * FROM admin";
     $results = mysqli_query($conn, $sql);
@@ -47,17 +40,62 @@ if (!isset($_SESSION['admin'])) {
     while($row = mysqli_fetch_assoc($results)) {
     $user++;
     }
-    
-  
     ?>
 
-    <p>Number of Admin <?php echo $admin;?></p>
-    <p>Number of Staff <?php echo $staff;?></p>
-    <p>Number of User <?php echo $user?></p>
+<body>
 
 
+    <div class="mybackground">
+        <nav>
+            <div class="nav-wrapper white">
+                <div class="row">
+                    <div class="col s2">
+                        <i
+                            class="black-text left"><?php echo isset($_SESSION['admin']) ? "Hello Admin " . $_SESSION['admin'] : '' ; ?></i>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <!-- Navbar goes here -->
+
+            <!-- Page Layout here -->
+            <div class="row">
+
+                <div class="col s2">
+
+                    <ul class="left hide-on-med-and-down">
+
+                        <li><a href="Admin_index.php">Home</a></li><br>
+                        <li><a href="Table.php">Tables</a></li><br>
+                        <li><a href="Dashboard.php">Dashboard</a></li><br>
+                        <li><a href="Logout.php">Logout</a></li>
+                    </ul>
+                </div>
+
+                <div class="col s9 center">
+                    <!-- Teal page content  -->
+                    <h3>Number of Admin : <?php echo $admin;?></h3>
+                    <h3>Number of Staff : <?php echo $staff;?></h3>
+                    <h3>Number of User : <?php echo $user?></h3>
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </nav>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="materialize/js/materialize.js"></script>
 </body>
-<?php
-?>
 
 </html>

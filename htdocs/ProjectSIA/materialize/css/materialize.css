@@ -3013,7 +3013,7 @@ tr {
 }
 
 td, th {
-  padding: 15px 5px;
+  padding: .2px 30px;
   display: table-cell;
   text-align: left;
   vertical-align: middle;
@@ -9086,10 +9086,23 @@ input[type=range]::-ms-thumb {
     margin-top: 1.2rem;
   }
 }
-.mybackground{
-  width: 100%;
+  .mybackground{
   height: 100vh;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #264653;
   background-image: linear-gradient(0deg, #264653 0%, #2a9d8f 100%);
 
-}
+  }
+  .mytablebackground{
+    height: 150vh;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #264653;
+    background-image: linear-gradient(0deg, #264653 0%, #2a9d8f 100%);
+  
+    }

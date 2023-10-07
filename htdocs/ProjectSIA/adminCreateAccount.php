@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css" media="screen,projection" />
     <meta charset="UTF-8">
@@ -40,7 +41,7 @@
 
 
 
-                        <form action="CreateAccount_Verifier.php" method="post">
+                        <form action="adminCreateAccount_verifier.php" method="post">
 
 
                             <div class="input-field">
@@ -76,7 +77,7 @@
 
 
                             <input type="submit" name="submit" class="btn">
-                            <a href="login.php" class="btn blue">Click here to log In</a>
+                            <a href="Table.php" class="btn blue">Back to Table</a>
 
 
                         </form>

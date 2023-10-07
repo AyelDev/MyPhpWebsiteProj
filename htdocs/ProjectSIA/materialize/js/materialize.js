@@ -12372,3 +12372,12 @@ $jscomp.polyfill = function (e, r, p, m) {
 
   Range.init($('input[type=range]'));
 })(cash, M.anime);
+function myfunction(){
+  var show = document.getElementById('show');
+  if (show.type== 'password'){
+      show.type='text';
+  }
+  else{
+      show.type='password';
+  }
+}

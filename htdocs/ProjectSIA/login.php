@@ -42,7 +42,7 @@ if ($admin_result === false) {
 <body>
     <!-- for background -->
     <div class="mybackground">
-        <div class="container"><br><br><br><br><br><br><br><br><br>
+        <div class="container"><br><br><br><br><br><br><br><br>
 
 
 
@@ -60,12 +60,12 @@ if ($admin_result === false) {
                 <div class="col s6">
                     <!-- card panel -->
                     <div class="card-panel">
-                        <label class="teal-text">
+                        <p>
                             <?php 
-                              echo isset($_GET['error']) ? $_GET['error'] : '' ;
-                              echo isset($_GET['success']) ? $_GET['success'] : '' ;
+                              echo isset($_GET['error']) ? "<p class=red-text>".$_GET['error']."</p>" : '' ;
+                              echo isset($_GET['success']) ? "<p class=teal-text>".$_GET['success']."</p>" : '' ;
                               ?>
-                        </label>
+                        </p>
 
 
                         <form action="Account_Verifier.php" method="post">
@@ -79,15 +79,28 @@ if ($admin_result === false) {
                             <!-- animation text Password-->
                             <div class="input-field col s12">
                                 <label class="teal-text">Password</label>
-                                <input type="password" name="password">
+                                <input type="password" name="password" id="show">
+                            </div>
+
+                            <div>
+                                <label>
+                                    <input type="checkbox" onclick="myfunction()"  />
+                                    <span class="teal-text">Show Password</span>
+                                </label>
+                            </div><br>
+
+                            <div>
+                                <input class="btn" type="submit" name="submit">
+                                <a href="CreateAccount.php" class="btn blue">Create
+                                    Account</a>
                             </div>
 
 
-                            <input class="btn" type="submit" name="submit">
 
-                            <a href="CreateAccount.php" onclick="M.toast({html: 'I am a toast'})" class="btn">Create
-                                Account</a>
                         </form>
+
+
+
                     </div>
                 </div>
             </div>
