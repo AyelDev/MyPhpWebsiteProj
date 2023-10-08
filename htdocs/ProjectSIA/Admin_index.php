@@ -66,6 +66,8 @@ if (!isset($_SESSION['admin'])) {
  
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="materialize/js/materialize.js"></script>
+    <!-- Jquery -->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
 </body>
 
 </html>

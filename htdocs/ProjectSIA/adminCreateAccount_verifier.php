@@ -30,7 +30,7 @@ if(isset($_REQUEST['submit'])){
         header("Location: adminCreateAccount.php?error=Name is required");
         exit();
     }elseif(empty($Username && empty($Password && empty($conPassword && empty($Name && empty($Type)))))){
-        header("Location:CreateAccount.php?error=Please fill up the form");
+        header("Location:adminCreateAccount.php?error=Please fill up the form");
         exit();
     }elseif($Password != $conPassword){
         header("Location: adminCreateAccount.php?error=Password and Confirm password is not matched");

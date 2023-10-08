@@ -63,25 +63,40 @@ if(isset($_POST['update-acc'])){
 <html lang="en">
 
 <head>
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css" media="screen,projection" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update</title>
 </head>
 
 <body>
-    <form action="updateStaff.php?id_new=<?php echo $staff_id; ?>" method="POST">
 
-        <label>Username</label>
-        <input type="text" name="username" value="<?php echo $row['username']?>">
-        <label>Password</label>
-        <input type="text" name="password" value="<?php echo $row['password']?>">
-        <label>Name</label>
-        <input type="text" name="name" value="<?php echo $row['name']?>">
-        <button type="submit" name="update-acc">
-            <p>Update</p>
-        </button>
-        <a href="Table.php">Back</a>
-    </form>
+<div class="mybackground">
+<div class="container"><br><br><br>
+<div class="card-panel">
+<form action="updateStaff.php?id_new=<?php echo $staff_id; ?>" method="POST">
+
+<label class="teal-text">Username</label>
+<input type="text" name="username" value="<?php echo $row['username']?>">
+<label class="teal-text">Password</label>
+<input type="text" name="password" value="<?php echo $row['password']?>">
+<label class="teal-text">Name</label>
+<input type="text" name="name" value="<?php echo $row['name']?>">
+<input class="btn teal" type="submit" name="update-acc" id="" value="Update">
+<a class="btn blue" href="Table.php">Back</a>
+</form>
+
+</div>
+</div>
+</div>
+
+   
+
+   
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="materialize/js/materialize.js"></script>
+    <!-- Jquery -->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
 </body>
 
 </html>

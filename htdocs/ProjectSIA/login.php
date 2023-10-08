@@ -90,7 +90,7 @@ if ($admin_result === false) {
                             </div><br>
 
                             <div>
-                                <input class="btn" type="submit" name="submit">
+                                <input class="btn" type="submit" name="submit" value="login">
                                 <a href="CreateAccount.php" class="btn blue">Create
                                     Account</a>
                             </div>

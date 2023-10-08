@@ -35,7 +35,8 @@ if(isset($_POST['update-acc'])){
     if(isset($_GET['id_new'])){
         $idnew = $_GET['id_new'];
     }
-    
+        $sqlBinStaff = "INSERT INTO `bin`(`name`, `username`, `password`) VALUES ('$Name', '$Username','$Password')";
+        $resultBinStaff = mysqli_query($conn, $sqlBinStaff);
         $sqlDeleteUser = "DELETE FROM user WHERE user_id = '$idnew'";
         $resultUser = mysqli_query($conn, $sqlDeleteUser);
 
@@ -62,25 +63,38 @@ if(isset($_POST['update-acc'])){
 <html lang="en">
 
 <head>
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css" media="screen,projection" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update</title>
 </head>
 
 <body>
-    <form action="deleteUser.php?id_new=<?php echo $user_id; ?>" method="POST">
 
-        <label>Username</label>
-        <input type="text" name="username" value="<?php echo $row['username']?>">
-        <label>Password</label>
-        <input type="text" name="password" value="<?php echo $row['password']?>">        
-        <label>Name</label>
-        <input type="text" name="name" value="<?php echo $row['name']?>">
-        <button type="submit" name="update-acc">
-            <p>Delete</p>
-        </button>
-        <a href="Table.php">Back</a>
-    </form>
+    <div class="mybackground">
+        <div class="container"><br><br><br><br><br><br>
+            <div class="card-panel">
+                <h3>Are you sure you want to delete ID <?php echo $row['user_id']?>?</h3>
+                <form action="deleteUser.php?id_new=<?php echo $user_id; ?>" method="POST">
+
+                    <p>Name: <i><?php echo $row['name']?></i> Username: <i><?php echo $row['username']?></i> Password: <i><?php echo $row['password']?></i></p>
+                    <input class="hidetext" type="text" name="username" value="<?php echo $row['username']?>" id="disabled">
+                    <input class="hidetext" type="text" name="password" value="<?php echo $row['password']?>">
+                    <input class="hidetext" type="text" name="name" value="<?php echo $row['name']?>">
+
+                    <input class="btn red" type="submit" name="update-acc" id="" value="Delete">
+                    <a class="btn blue" href="Table.php">Back</a>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="materialize/js/materialize.js"></script>
+    <!-- Jquery -->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
 </body>
 
 </html>
