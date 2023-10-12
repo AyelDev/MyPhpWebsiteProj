@@ -43,7 +43,7 @@ if (!isset($_SESSION['admin'])) {
             <!-- Page Layout here -->
             <div class="row">
 
-                <div class="col s2">
+                <div class="col s2 ">
                     <ul class="left hide-on-med-and-down">
 
                         <li><a href="Admin_index.php">Home</a></li><br>

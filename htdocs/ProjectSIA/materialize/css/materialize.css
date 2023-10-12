@@ -3731,7 +3731,7 @@ table span.badge {
     right: auto;
   }
   .row .col.m2 {
-    width: 16.6666666667%;
+    width: 19.6666666667%;
     margin-left: auto;
     left: auto;
     right: auto;
@@ -4492,7 +4492,7 @@ a {
 }
 
 html {
-  line-height: 1.5;
+  line-height: 9;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
@@ -4500,7 +4500,7 @@ html {
 
 @media only screen and (min-width: 0) {
   html {
-    font-size: 14px;
+    font-size: 30px;
   }
 }
 
@@ -9094,17 +9094,18 @@ input[type=range]::-ms-thumb {
   background-size: cover;
   background-color: #264653;
   background-image: linear-gradient(0deg, #264653 0%, #2a9d8f 100%);
+  overflow: auto;
 
   }
   .mytablebackground{
-    height: 150vh;
+    height: 100vh;
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #264653;
     background-image: linear-gradient(0deg, #264653 0%, #2a9d8f 100%);
-  
+    overflow: auto;
     }
 .hidetext{
     /* Hide the text. */

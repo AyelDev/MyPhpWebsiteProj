@@ -1,6 +1,6 @@
 <?php
 
-$lname="localhost";
+$lname="127.0.0.2:3307";
 $uname="root";
 $password="";
 $dbname="sia_login";
