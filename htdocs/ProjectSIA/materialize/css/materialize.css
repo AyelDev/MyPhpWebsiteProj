@@ -4492,7 +4492,7 @@ a {
 }
 
 html {
-  line-height: 9;
+  line-height: 1;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
@@ -9094,7 +9094,7 @@ input[type=range]::-ms-thumb {
   background-size: cover;
   background-color: #264653;
   background-image: linear-gradient(0deg, #264653 0%, #2a9d8f 100%);
-  overflow: auto;
+  
 
   }
   .mytablebackground{

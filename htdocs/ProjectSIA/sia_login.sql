@@ -2,8 +2,8 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Oct 08, 2023 at 08:10 AM
+-- Host: 127.0.0.2:3307
+-- Generation Time: Oct 14, 2023 at 05:03 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -67,7 +67,11 @@ INSERT INTO `bin` (`id`, `name`, `username`, `password`) VALUES
 (11, 'tope', 'toper', 'toper'),
 (12, '123', '123', '123'),
 (13, 'asd', 'asd', 'asd'),
-(14, 'dd', 'dd', '123');
+(14, 'dd', 'dd', '123'),
+(15, 'ariel', 'ariel', '123'),
+(16, 'ss', 'ss', '123'),
+(17, 'cindy', 'cindy', '123'),
+(18, '123', 'ass', '123');
 
 -- --------------------------------------------------------
 
@@ -88,7 +92,11 @@ CREATE TABLE `staff` (
 
 INSERT INTO `staff` (`staff_id`, `username`, `password`, `name`) VALUES
 (34, 'asd', 'asd', 'asd'),
-(35, 'cindy', '123', 'cindy');
+(36, 'ccx', '123', 'ccx'),
+(37, 'zxx', '123', 'as'),
+(38, 'aaa', 'sd', 'sds'),
+(39, 'dd', 'sd', 'sd'),
+(40, 'cc', 'cc', 'cc');
 
 -- --------------------------------------------------------
 
@@ -108,9 +116,13 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `username`, `password`, `name`) VALUES
-(80, 'ass', '123', '123'),
-(81, 'ss', '123', 'ss'),
-(83, 'ariel', '123', 'ariel');
+(84, 'cindy', '123', 'asd'),
+(85, 'user', '123', 'User'),
+(86, 'sdsd', 'sd', 'sd'),
+(87, 'sddd', 'sd', 'sdd'),
+(88, 'zz', 'sd', 'userrss'),
+(89, 'cbb', 'vb', 'vb'),
+(90, 'll', '123', 'pp');
 
 --
 -- Indexes for dumped tables
@@ -154,19 +166,19 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `bin`
 --
 ALTER TABLE `bin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `staff_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `staff_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

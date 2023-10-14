@@ -78,15 +78,32 @@ if (!isset($_SESSION['admin'])) {
 
                 <div class="col s9 center">
                     <!-- Teal page content  -->
-                    <h3>Number of Admin : <?php echo $admin;?></h3>
-                    <h3>Number of Staff : <?php echo $staff;?></h3>
-                    <h3>Number of User : <?php echo $user?></h3>
-
-
+                    
+            
+              <h1>Number of accounts</h1>
 
                 </div>
 
+                <style>
+                .row .col {
+                    margin-right: 10px;
+                    /* Adjust the margin as needed */
+                }
+                </style>
 
+                <div class="row">
+                    <div class="col s11 m5 l3 card">
+                    <h4 class="teal-text center">Number of Admin: <?php echo $admin;?></h4>
+                    </div>
+                    <div class="col s11 m5 l3 card">
+                    <h4 class="teal-text center">Number of Staff : <?php echo $staff;?></h4>
+                    </div>
+                    <div class="col s11 m5 l3 card">
+                    <h4 class="teal-text center">Number of User : <?php echo $user?></h4>
+
+
+                    </div>
+                </div>
 
 
 

@@ -40,9 +40,15 @@ if ($admin_result === false) {
 </head>
 
 <body>
+<style>
+    .btn {
+        margin-right: 10px;
+        /* Adjust the margin as needed */
+    }
+    </style>
     <!-- for background -->
     <div class="mybackground">
-        <div class="container"><br><br><br><br><br><br><br><br>
+        <div class="container"><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 

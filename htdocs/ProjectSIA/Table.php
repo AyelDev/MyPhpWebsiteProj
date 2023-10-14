@@ -20,6 +20,13 @@ if (!isset($_SESSION['admin'])) {
 </head>
 
 <body>
+    <style>
+    .btn {
+        margin-right: 10px;
+        /* Adjust the margin as needed */
+    }
+    </style>
+
 
     <div class="mytablebackground">
 
@@ -38,9 +45,7 @@ if (!isset($_SESSION['admin'])) {
             </div>
 
 
-            <!-- Navbar goes here -->
-
-            <!-- Page Layout here -->
+           
             <div class="row">
 
                 <div class="col s2 ">
@@ -54,7 +59,7 @@ if (!isset($_SESSION['admin'])) {
                     </ul>
                 </div>
                 <div class="col s8">
-                    <h3>User Table</h3>
+                    <h4>User Table</h4>
                     <!-- for updates -->
                     <p>
                         <?php if( isset($_GET['user-update-error'])){
@@ -88,6 +93,7 @@ echo $_GET['user-update-success'];
                             <td>
                                 <button class="btn blue"
                                     onclick="location.href = 'updateUser.php?id=<?php echo $row['user_id'];?>'">Update</button>
+
                                 <button class="btn red"
                                     onclick="location.href = 'deleteUser.php?id=<?php echo $row['user_id'];?>'">Delete</button>
                             </td>
@@ -106,7 +112,7 @@ echo $_GET['user-update-success'];
                 <div class="container">
                     <div class="col s12">
 
-                        <h3>Staff Table</h3>
+                        <h4>Staff Table</h4>
                         <!-- for updates -->
                         <p>
                             <?php if( isset($_GET['staff-update-error'])){
