@@ -14,7 +14,7 @@ if (!isset($_SESSION['user'])) {
 <html lang="en">
 
 <head>
-    <link type="text/css" rel="stylesheet" href="/folder/materialize/css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="/ProjectSIA2/materialize/css/materialize.css" media="screen,projection" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User</title>
@@ -81,7 +81,7 @@ if (!isset($_SESSION['user'])) {
 
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="Profile.html">Profile</a></li>
-                    <li><a href="/folder/Logout.php">Logout</a></li>
+                    <li><a href="/ProjectSIA2/Logout.php">Logout</a></li>
                 </ul>
             </div>
         </nav>
@@ -111,13 +111,13 @@ if (!isset($_SESSION['user'])) {
                     <p>A bunch of books</p>
                     <div class="row">
                         <div class="col s4">
-                            <div class="card-panel hoverable" onclick="location.href='/folder/pdf/A_Programmers_Guide_to_the_Mind.pdf'"><img class="responsive-img" src="/folder/image/Book1.jpg" alt="A Programmer's Guide to the mind">A Programmer's Guide to the Mind</div>
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/A_Programmers_Guide_to_the_Mind.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book1.jpg" alt="A Programmer's Guide to the mind">A Programmer's Guide to the Mind</div>
                         </div>
                         <div class="col s4">
-                            <div class="card-panel hoverable" onclick="location.href='/folder/pdf/Learn_Java_for_Web_Development.pdf'"><img class="responsive-img" src="/folder/image/Book2.jpg" alt="Learn Java For Web Development"> Learn Java For Web Development</div>
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Learn_Java_for_Web_Development.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book2.jpg" alt="Learn Java For Web Development"> Learn Java For Web Development</div>
                         </div>
                         <div class="col s4">
-                            <div class="card-panel hoverable" onclick="location.href='/folder/pdf/Web_animation.pdf'"><img class="responsive-img" src="/folder/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
                         </div>
 
                     </div>
@@ -135,7 +135,7 @@ if (!isset($_SESSION['user'])) {
                     <p>A bunch of books</p>
                     <div class="row">
                         <div class="col s4">
-                        <div class="card-panel hoverable" onclick="location.href='/folder/pdf/A_Programmers_Guide_to_the_Mind.pdf'"><img class="responsive-img" src="/folder/image/Book1.jpg" alt="A Programmer's Guide to the mind">A Programmer's Guide to the Mind</div>
+                        <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/A_Programmers_Guide_to_the_Mind.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book1.jpg" alt="A Programmer's Guide to the mind">A Programmer's Guide to the Mind</div>
                         </div>
                         <div class="col s4">
                             <div class="card-panel hoverable"> Hoverable Card Panel</div>
@@ -256,9 +256,9 @@ if (!isset($_SESSION['user'])) {
     });
     </script>
     <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="/folder/materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="/ProjectSIA2/materialize/js/materialize.js"></script>
     <!-- Jquery -->
-    <script type="text/javascript" src="/folder/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/ProjectSIA2/jquery/jquery.js"></script>
 
 </body>
 

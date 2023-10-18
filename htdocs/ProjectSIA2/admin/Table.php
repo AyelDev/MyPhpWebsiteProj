@@ -13,7 +13,7 @@ if (!isset($_SESSION['admin'])) {
 <html lang="en">
 
 <head>
-    <link type="text/css" rel="stylesheet" href="/folder/materialize/css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="/ProjectSIA2/materialize/css/materialize.css" media="screen,projection" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
@@ -54,7 +54,7 @@ if (!isset($_SESSION['admin'])) {
                         <li><a href="Admin_index.php">Home</a></li><br>
                         <li><a href="Table.php">Tables</a></li><br>
                         <li><a href="Dashboard.php">Dashboard</a></li><br>
-                        <li><a href="/folder/Logout.php">Logout</a></li>
+                        <li><a href="/ProjectSIA2/Logout.php">Logout</a></li>
                         <br><br><br><br><br>
                     </ul>
                 </div>
@@ -165,9 +165,9 @@ echo $_GET['staff-update-success'];
 
 
     <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="folder/materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="ProjectSIA2/materialize/js/materialize.js"></script>
     <!-- Jquery -->
-    <script type="text/javascript" src="folder/jquery/jquery.js"></script>
+    <script type="text/javascript" src="ProjectSIA2/jquery/jquery.js"></script>
 </body>
 
 
