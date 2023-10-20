@@ -63,7 +63,7 @@ if(isset($_POST['update-acc'])){
 <html lang="en">
 
 <head>
-    <link type="text/css" rel="stylesheet" href="/folder/materialize/css/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="/ProjectSIA/materialize/css/materialize.css" media="screen,projection" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update</title>
@@ -94,9 +94,9 @@ if(isset($_POST['update-acc'])){
 
    
     <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="/folder/materialize/js/materialize.js"></script>
+    <script type="text/javascript" src="/ProjectSIA/materialize/js/materialize.js"></script>
     <!-- Jquery -->
-    <script type="text/javascript" src="/folder/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/ProjectSIA/jquery/jquery.js"></script>
 </body>
 
 </html>

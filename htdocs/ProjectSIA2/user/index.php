@@ -138,10 +138,10 @@ if (!isset($_SESSION['user'])) {
                         <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/A_Programmers_Guide_to_the_Mind.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book1.jpg" alt="A Programmer's Guide to the mind">A Programmer's Guide to the Mind</div>
                         </div>
                         <div class="col s4">
-                            <div class="card-panel hoverable"> Hoverable Card Panel</div>
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
                         </div>
                         <div class="col s4">
-                            <div class="card-panel hoverable"> Hoverable Card Panel</div>
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
                         </div>
 
                     </div>
@@ -158,13 +158,13 @@ if (!isset($_SESSION['user'])) {
                     <p>A bunch of books</p>
                     <div class="row">
                         <div class="col s4">
-                            <div class="card-panel hoverable"> Hoverable Card Panel</div>
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
                         </div>
                         <div class="col s4">
-                            <div class="card-panel hoverable"> Hoverable Card Panel</div>
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
                         </div>
                         <div class="col s4">
-                            <div class="card-panel hoverable"> Hoverable Card Panel</div>
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
                         </div>
 
                     </div>
@@ -181,13 +181,13 @@ if (!isset($_SESSION['user'])) {
                     <p>A bunch of books</p>
                     <div class="row">
                         <div class="col s4">
-                            <div class="card-panel hoverable"> Hoverable Card Panel</div>
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
                         </div>
                         <div class="col s4">
-                            <div class="card-panel hoverable"> Hoverable Card Panel</div>
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
                         </div>
                         <div class="col s4">
-                            <div class="card-panel hoverable"> Hoverable Card Panel</div>
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
                         </div>
 
                     </div>
@@ -204,13 +204,13 @@ if (!isset($_SESSION['user'])) {
                     <p>A bunch of books</p>
                     <div class="row">
                         <div class="col s4">
-                            <div class="card-panel hoverable"> Hoverable Card Panel</div>
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
                         </div>
                         <div class="col s4">
-                            <div class="card-panel hoverable"> Hoverable Card Panel</div>
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
                         </div>
                         <div class="col s4">
-                            <div class="card-panel hoverable"> Hoverable Card Panel</div>
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
                         </div>
 
                     </div>
