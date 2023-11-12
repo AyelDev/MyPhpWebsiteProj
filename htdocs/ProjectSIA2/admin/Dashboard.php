@@ -70,6 +70,7 @@ if (!isset($_SESSION['admin'])) {
                     <ul class="left hide-on-med-and-down">
 
                         <li><a href="Admin_index.php">Home</a></li><br>
+                        <li><a href="adminCreateAccount.php">Add User</a></li><br>
                         <li><a href="Table.php">Tables</a></li><br>
                         <li><a href="Dashboard.php">Dashboard</a></li><br>
                         <li><a href="/ProjectSIA2/Logout.php">Logout</a></li>

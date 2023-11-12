@@ -122,7 +122,9 @@ if ($admin_result === false) {
     </style>
     <!-- for background -->
     <div class="mybackground">
+    
         <section>
+       
             <div class='air air1'></div>
             <div class='air air2'></div>
             <div class='air air3'></div>
@@ -135,9 +137,11 @@ if ($admin_result === false) {
 
 
                 <div class="row">
-
+             
                     <div class="col s6">
-                        <h1 class="white-text center">Welcome!</h1>
+                    <img src="image/cec.png" alt="">
+                        <!-- <h3 class="white-text center">Welcome!</h3> -->
+                       
                     </div>
 
 
@@ -186,14 +190,14 @@ if ($admin_result === false) {
                             </form>
 
 
-
+                           
                         </div>
                     </div>
                 </div>
 
 
 
-
+               
             </div>
         </section>
     </div>
