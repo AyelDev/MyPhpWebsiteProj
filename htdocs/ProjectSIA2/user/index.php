@@ -119,6 +119,21 @@ if (!isset($_SESSION['user'])) {
                         <div class="col s4">
                             <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
                         </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
 
                     </div>
 
@@ -143,6 +158,22 @@ if (!isset($_SESSION['user'])) {
                         <div class="col s4">
                             <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
                         </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        
 
                     </div>
 
@@ -157,6 +188,21 @@ if (!isset($_SESSION['user'])) {
                     <h4>HM Library</h4>
                     <p>A bunch of books</p>
                     <div class="row">
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
                         <div class="col s4">
                             <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
                         </div>
@@ -189,6 +235,21 @@ if (!isset($_SESSION['user'])) {
                         <div class="col s4">
                             <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
                         </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
 
                     </div>
 
@@ -203,6 +264,21 @@ if (!isset($_SESSION['user'])) {
                     <h4>TM Library</h4>
                     <p>A bunch of books</p>
                     <div class="row">
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
+                        <div class="col s4">
+                            <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
+                        </div>
                         <div class="col s4">
                             <div class="card-panel hoverable" onclick="location.href='/ProjectSIA2/pdf/Web_animation.pdf'"><img class="responsive-img" src="/ProjectSIA2/image/Book3.jpg" alt="Web Animation using JavaScript">Web Animation using JavaScript</div>
                         </div>
