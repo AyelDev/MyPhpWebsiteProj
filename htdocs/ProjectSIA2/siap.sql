@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.2:3307
--- Generation Time: Nov 26, 2023 at 02:48 PM
+-- Generation Time: Nov 26, 2023 at 06:21 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -107,7 +107,9 @@ CREATE TABLE `user_library` (
   `title` varchar(50) NOT NULL,
   `author` varchar(50) NOT NULL,
   `published` varchar(50) NOT NULL,
-  `cover` varchar(50) NOT NULL
+  `cover` varchar(50) NOT NULL,
+  `file` varchar(50) NOT NULL,
+  `course_name` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -145,12 +147,6 @@ ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- Indexes for table `user_library`
---
-ALTER TABLE `user_library`
-  ADD PRIMARY KEY (`book_id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -164,7 +160,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `admin_staff_library`
 --
 ALTER TABLE `admin_staff_library`
-  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
+  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
 
 --
 -- AUTO_INCREMENT for table `bin`
@@ -182,13 +178,7 @@ ALTER TABLE `staff`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
-
---
--- AUTO_INCREMENT for table `user_library`
---
-ALTER TABLE `user_library`
-  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
