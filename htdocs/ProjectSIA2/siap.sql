@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.2:3307
--- Generation Time: Oct 14, 2023 at 05:03 AM
+-- Generation Time: Nov 26, 2023 at 02:48 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -44,6 +44,22 @@ INSERT INTO `admin` (`id`, `username`, `password`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `admin_staff_library`
+--
+
+CREATE TABLE `admin_staff_library` (
+  `book_id` int(11) NOT NULL,
+  `title` varchar(50) NOT NULL,
+  `author` varchar(30) NOT NULL,
+  `published` varchar(50) NOT NULL,
+  `cover` varchar(50) NOT NULL,
+  `file` varchar(500) NOT NULL,
+  `course_name` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `bin`
 --
 
@@ -53,25 +69,6 @@ CREATE TABLE `bin` (
   `username` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `bin`
---
-
-INSERT INTO `bin` (`id`, `name`, `username`, `password`) VALUES
-(6, 'ariel', 'Ariel', '123'),
-(7, 'cindy', 'Cindy', '345'),
-(8, 'kiven', 'kiven', '123'),
-(9, 'paul', 'paul', '12345'),
-(10, 'toper', 'tope', 'qwe'),
-(11, 'tope', 'toper', 'toper'),
-(12, '123', '123', '123'),
-(13, 'asd', 'asd', 'asd'),
-(14, 'dd', 'dd', '123'),
-(15, 'ariel', 'ariel', '123'),
-(16, 'ss', 'ss', '123'),
-(17, 'cindy', 'cindy', '123'),
-(18, '123', 'ass', '123');
 
 -- --------------------------------------------------------
 
@@ -86,18 +83,6 @@ CREATE TABLE `staff` (
   `name` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `staff`
---
-
-INSERT INTO `staff` (`staff_id`, `username`, `password`, `name`) VALUES
-(34, 'asd', 'asd', 'asd'),
-(36, 'ccx', '123', 'ccx'),
-(37, 'zxx', '123', 'as'),
-(38, 'aaa', 'sd', 'sds'),
-(39, 'dd', 'sd', 'sd'),
-(40, 'cc', 'cc', 'cc');
-
 -- --------------------------------------------------------
 
 --
@@ -111,18 +96,19 @@ CREATE TABLE `user` (
   `name` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data for table `user`
+-- Table structure for table `user_library`
 --
 
-INSERT INTO `user` (`user_id`, `username`, `password`, `name`) VALUES
-(84, 'cindy', '123', 'asd'),
-(85, 'user', '123', 'User'),
-(86, 'sdsd', 'sd', 'sd'),
-(87, 'sddd', 'sd', 'sdd'),
-(88, 'zz', 'sd', 'userrss'),
-(89, 'cbb', 'vb', 'vb'),
-(90, 'll', '123', 'pp');
+CREATE TABLE `user_library` (
+  `book_id` int(11) NOT NULL,
+  `title` varchar(50) NOT NULL,
+  `author` varchar(50) NOT NULL,
+  `published` varchar(50) NOT NULL,
+  `cover` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Indexes for dumped tables
@@ -133,6 +119,12 @@ INSERT INTO `user` (`user_id`, `username`, `password`, `name`) VALUES
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `admin_staff_library`
+--
+ALTER TABLE `admin_staff_library`
+  ADD PRIMARY KEY (`book_id`);
 
 --
 -- Indexes for table `bin`
@@ -153,6 +145,12 @@ ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`);
 
 --
+-- Indexes for table `user_library`
+--
+ALTER TABLE `user_library`
+  ADD PRIMARY KEY (`book_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -161,6 +159,12 @@ ALTER TABLE `user`
 --
 ALTER TABLE `admin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+
+--
+-- AUTO_INCREMENT for table `admin_staff_library`
+--
+ALTER TABLE `admin_staff_library`
+  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=100;
 
 --
 -- AUTO_INCREMENT for table `bin`
@@ -172,13 +176,19 @@ ALTER TABLE `bin`
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `staff_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `staff_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=94;
+
+--
+-- AUTO_INCREMENT for table `user_library`
+--
+ALTER TABLE `user_library`
+  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
