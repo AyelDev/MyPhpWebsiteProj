@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.2:3307
--- Generation Time: Nov 26, 2023 at 06:21 PM
+-- Generation Time: Nov 27, 2023 at 09:39 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -96,6 +96,14 @@ CREATE TABLE `user` (
   `name` varchar(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`user_id`, `username`, `password`, `name`) VALUES
+(95, 'user', '123', 'userAriel'),
+(96, 'cindy', '123', 'userCindy');
+
 -- --------------------------------------------------------
 
 --
@@ -103,6 +111,7 @@ CREATE TABLE `user` (
 --
 
 CREATE TABLE `user_library` (
+  `user_id` int(11) NOT NULL,
   `book_id` int(11) NOT NULL,
   `title` varchar(50) NOT NULL,
   `author` varchar(50) NOT NULL,
@@ -111,6 +120,15 @@ CREATE TABLE `user_library` (
   `file` varchar(50) NOT NULL,
   `course_name` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `user_library`
+--
+
+INSERT INTO `user_library` (`user_id`, `book_id`, `title`, `author`, `published`, `cover`, `file`, `course_name`) VALUES
+(95, 116, 'Learn Java For Web Development', 'asdadasdassd', 'asdadaa', 'Book2.jpg', 'Learn_Java_for_Web_Development.pdf', 'BSIT'),
+(96, 117, 'A Programmers Guide to the Mind', 'Lorin Friesen', '2000', 'Book1.jpg', 'A_Programmers_Guide_to_the_Mind.pdf', 'BSIT'),
+(95, 118, 'Web animation', 'Julian Shapiro', '2000', 'Book33.jpg', 'web_animation.pdf', 'BSHM');
 
 --
 -- Indexes for dumped tables
@@ -147,6 +165,12 @@ ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`);
 
 --
+-- Indexes for table `user_library`
+--
+ALTER TABLE `user_library`
+  ADD KEY `book_id` (`book_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -160,7 +184,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `admin_staff_library`
 --
 ALTER TABLE `admin_staff_library`
-  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=107;
+  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=119;
 
 --
 -- AUTO_INCREMENT for table `bin`
@@ -178,7 +202,7 @@ ALTER TABLE `staff`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=95;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
