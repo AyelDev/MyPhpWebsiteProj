@@ -161,8 +161,8 @@ if (!isset($_SESSION['admin'])) {
                                     $sql = "SELECT * FROM admin_staff_library WHERE course_name = 'BSIT'";
                                     $query = mysqli_query($conn, $sql);
                                     while ($row = mysqli_fetch_assoc($query)) {
-                                        $String = '<div class="col s4"><div class="booksBsit">';
-                                        $String .= '<div class="card-panel hoverable black-text"';
+                                        $String = '<div class=""><div class="booksBsit">';
+                                        $String .= '<div class="card-panel col s4 hoverable black-text"';
                                         $String .= 'onclick="location.href=';
                                         $String .= "'";
                                         $String .= '/ProjectSIA2/admin/adminStaffPdf/';
