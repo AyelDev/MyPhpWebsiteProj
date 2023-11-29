@@ -161,8 +161,8 @@ if (!isset($_SESSION['admin'])) {
                                     $sql = "SELECT * FROM admin_staff_library WHERE course_name = 'BSIT'";
                                     $query = mysqli_query($conn, $sql);
                                     while ($row = mysqli_fetch_assoc($query)) {
-                                        $String = '<div class="col s4"><div class="booksBsit">';
-                                        $String .= '<div class="card-panel hoverable black-text"';
+                                        $String = '<div class=""><div class="booksBsit">';
+                                        $String .= '<div class="card-panel col s4 hoverable black-text"';
                                         $String .= 'onclick="location.href=';
                                         $String .= "'";
                                         $String .= '/ProjectSIA2/admin/adminStaffPdf/';
@@ -179,7 +179,7 @@ if (!isset($_SESSION['admin'])) {
                                         //note: change from admin library to admin borrow location for viewing
                                         $String .= '</p><a href="/ProjectSIA2/admin/Admin_ReadBorrow.php?book_id=';
                                         $String .= $row['book_id'];
-                                        $String .= '" class="btn">View Book</a>';
+                                        $String .= '" class="btn" style="margin-bottom:5px">View Book</a>';
                                         $String .= '</div></div>';
                                         $String .= '</div>';
                                         echo $String;
@@ -213,8 +213,8 @@ if (!isset($_SESSION['admin'])) {
                                     $sql = "SELECT * FROM admin_staff_library WHERE course_name = 'BSDEVCOM'";
                                     $query = mysqli_query($conn, $sql);
                                     while ($row = mysqli_fetch_assoc($query)) {
-                                        $String = '<div class="col s4"><div class="booksDevcom">';
-                                        $String .= '<div class="card-panel hoverable black-text"';
+                                        $String = '<div class=""><div class="booksDevcom">';
+                                        $String .= '<div class="card-panel col s4 hoverable black-text"';
                                         $String .= 'onclick="location.href=';
                                         $String .= "'";
                                         $String .= '/ProjectSIA2/admin/adminStaffPdf/';
@@ -231,7 +231,7 @@ if (!isset($_SESSION['admin'])) {
                                         //note: change from admin library to admin borrow location for viewing
                                         $String .= '</p><a href="/ProjectSIA2/admin/Admin_ReadBorrow.php?book_id=';
                                         $String .= $row['book_id'];
-                                        $String .= '" class="btn">View Book</a>';
+                                        $String .= '" class="btn" style="margin-bottom:5px">View Book</a>';
                                         $String .= '</div></div>';
                                         $String .= '</div>';
                                         echo $String;
@@ -266,8 +266,8 @@ if (!isset($_SESSION['admin'])) {
                                 $sql = "SELECT * FROM admin_staff_library WHERE course_name = 'BSHM'";
                                 $query = mysqli_query($conn, $sql);
                                 while ($row = mysqli_fetch_assoc($query)) {
-                                    $String = '<div class="col s4"><div class="booksHtlManagement">';
-                                    $String .= '<div class="card-panel hoverable black-text"';
+                                    $String = '<div class=""><div class="booksHtlManagement">';
+                                    $String .= '<div class="card-panel s4 hoverable black-text"';
                                     $String .= 'onclick="location.href=';
                                     $String .= "'";
                                     $String .= '/ProjectSIA2/admin/adminStaffPdf/';
@@ -284,7 +284,7 @@ if (!isset($_SESSION['admin'])) {
                                     //note: change from admin library to admin borrow location for viewing
                                     $String .= '</p><a href="/ProjectSIA2/admin/Admin_ReadBorrow.php?book_id=';
                                     $String .= $row['book_id'];
-                                    $String .= '" class="btn">View Book</a>';
+                                    $String .= '" class="btn" style="margin-bottom:5px">View Book</a>';
                                     $String .= '</div></div>';
                                     $String .= '</div>';
                                     echo $String;
@@ -317,8 +317,8 @@ if (!isset($_SESSION['admin'])) {
                                 $sql = "SELECT * FROM admin_staff_library WHERE course_name = 'BEED'";
                                 $query = mysqli_query($conn, $sql);
                                 while ($row = mysqli_fetch_assoc($query)) {
-                                    $String = '<div class="col s4"><div class="booksEDUC">';
-                                    $String .= '<div class="card-panel hoverable black-text"';
+                                    $String = '<div class=""><div class="booksEDUC">';
+                                    $String .= '<div class="card-panel col s4 hoverable black-text"';
                                     $String .= 'onclick="location.href=';
                                     $String .= "'";
                                     $String .= '/ProjectSIA2/admin/adminStaffPdf/';
@@ -335,7 +335,7 @@ if (!isset($_SESSION['admin'])) {
                                     //note: change from admin library to admin borrow location for viewing
                                     $String .= '</p><a href="/ProjectSIA2/admin/Admin_ReadBorrow.php?book_id=';
                                     $String .= $row['book_id'];
-                                    $String .= '" class="btn">View Book</a>';
+                                    $String .= '" class="btn" style="margin-bottom:5px">View Book</a>';
                                     $String .= '</div></div>';
                                     $String .= '</div>';
                                     echo $String;
@@ -357,7 +357,8 @@ if (!isset($_SESSION['admin'])) {
                             <div class="row">
                                 <div class="col s3">
                                     <div class="input-field inline">
-                                        <input type="text" class="validate" id="findTrmManagement" onkeyup="searchTrmManagement()">
+                                        <input type="text" class="validate" id="findTrmManagement"
+                                            onkeyup="searchTrmManagement()">
                                         <label for="email_inline">Search Book : ...</label>
                                     </div>
                                 </div>
@@ -368,8 +369,8 @@ if (!isset($_SESSION['admin'])) {
                                 $sql = "SELECT * FROM admin_staff_library WHERE course_name = 'BSTM'";
                                 $query = mysqli_query($conn, $sql);
                                 while ($row = mysqli_fetch_assoc($query)) {
-                                    $String = '<div class="col s4"><div class="booksTrmManagement">';
-                                    $String .= '<div class="card-panel hoverable black-text"';
+                                    $String = '<div class=""><div class="booksTrmManagement">';
+                                    $String .= '<div class="card-panel col s4 hoverable black-text"';
                                     $String .= 'onclick="location.href=';
                                     $String .= "'";
                                     $String .= '/ProjectSIA2/admin/adminStaffPdf/';
@@ -380,18 +381,20 @@ if (!isset($_SESSION['admin'])) {
                                     $String .= $row['cover'];
                                     $String .= '"';
                                     $String .= 'alt="';
-                                    $String .= $row['title'] . '" ><p class="pTrmManagement">';
+                                    $String .= $row['title'];
+                                    $String .= '"><p class="pTrmManagement">';
                                     $String .= $row['title'];
                                     //buttton for view book
                                     //note: change from admin library to admin borrow location for viewing
                                     $String .= '</p><a href="/ProjectSIA2/admin/Admin_ReadBorrow.php?book_id=';
                                     $String .= $row['book_id'];
-                                    $String .= '" class="btn">View Book</a>';
+                                    $String .= '" class="btn" style="margin-bottom:5px">View Book</a>';
                                     $String .= '</div></div>';
                                     $String .= '</div>';
                                     echo $String;
                                 }
                                 ?>
+
 
                             </div>
 
@@ -490,10 +493,10 @@ if (!isset($_SESSION['admin'])) {
                 function searchTrmManagement() {
                     let filter = document.getElementById('findTrmManagement').value.toUpperCase();
                     let item = document.querySelectorAll('.booksTrmManagement');
-                    let l = document.getElementsByClassName('pTrmManagement');
+                    let l = document.getElementsByTagName('p');
 
                     for (var i = 0; i <= l.length; i++) {
-                        let a = item[i].getElementsByClassName('pTrmManagement')[0];
+                        let a = item[i].getElementsByTagName('p')[0];
                         let value = a.innerHTML || a.innerText || a.textContent;
 
                         if (value.toUpperCase().indexOf(filter) > -1) {
@@ -503,6 +506,7 @@ if (!isset($_SESSION['admin'])) {
                         }
                     }
                 }
+
             </script>
             <script type="text/javascript" src="/ProjectSIA2/materialize/js/materialize.js"></script>
             <!-- Jquery -->

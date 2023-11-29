@@ -25,7 +25,7 @@ if (isset($_REQUEST['submit'])) {
     echo '<h2>Please fill up all the forms</h2>';
   } else {
     //syntax for book duplication error
-    $sql2 = "SELECT title,cover FROM admin_staff_library WHERE title='$title' AND cover = '$image_file_name' UNION SELECT title,cover FROM user_library WHERE title='$title' AND cover = '$image_file_name'";
+    $sql2 = "SELECT title,cover,file FROM admin_staff_library WHERE title='$title' OR cover = '$image_file_name' OR file = '$file_name' UNION SELECT title,cover,file FROM user_library WHERE title='$title' OR cover = '$image_file_name' OR file = '$file_name'";
     $query2 = mysqli_query($conn, $sql2);
     $num_rows = mysqli_num_rows($query2);
     if ($num_rows) {
