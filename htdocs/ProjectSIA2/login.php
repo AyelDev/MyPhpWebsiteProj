@@ -1,6 +1,10 @@
 <?php
 include "connection_db.php";
 include "config.php";
+
+//checks the date return books
+require('returnBookChecker.php');
+
 //admin default password and user
 $adminUsername = "admin";
 $adminPassword = "admin";

@@ -170,7 +170,7 @@ if (!isset($_SESSION['staff'])) {
                                         $String .= $row['title'];
                                         //buttton for view book
                                         //note: change from admin library to admin borrow location for viewing
-                                        $String .= '</p><a href="/ProjectSIA2/admin/Admin_ReadBorrow.php?book_id=';
+                                        $String .= '</p><a href="/ProjectSIA2/staff/staff_ViewBook.php?book_id=';
                                         $String .= $row['book_id'];
                                         $String .= '" class="btn">View Book</a>';
                                         $String .= '</div></div>';
@@ -222,7 +222,7 @@ if (!isset($_SESSION['staff'])) {
                                         $String .= $row['title'];
                                         //buttton for view book
                                         //note: change from admin library to admin borrow location for viewing
-                                        $String .= '</p><a href="/ProjectSIA2/admin/Admin_ReadBorrow.php?book_id=';
+                                        $String .= '</p><a href="/ProjectSIA2/staff/staff_ViewBook.php?book_id=';
                                         $String .= $row['book_id'];
                                         $String .= '" class="btn">View Book</a>';
                                         $String .= '</div></div>';
@@ -275,7 +275,7 @@ if (!isset($_SESSION['staff'])) {
                                     $String .= $row['title'];
                                     //buttton for view book
                                     //note: change from admin library to admin borrow location for viewing
-                                    $String .= '</p><a href="/ProjectSIA2/admin/Admin_ReadBorrow.php?book_id=';
+                                    $String .= '</p><a href="/ProjectSIA2/staff/staff_ViewBook.php?book_id=';
                                     $String .= $row['book_id'];
                                     $String .= '" class="btn">View Book</a>';
                                     $String .= '</div></div>';
@@ -326,7 +326,7 @@ if (!isset($_SESSION['staff'])) {
                                     $String .= $row['title'];
                                     //buttton for view book
                                     //note: change from admin library to admin borrow location for viewing
-                                    $String .= '</p><a href="/ProjectSIA2/admin/Admin_ReadBorrow.php?book_id=';
+                                    $String .= '</p><a href="/ProjectSIA2/staff/staff_ViewBook.php?book_id=';
                                     $String .= $row['book_id'];
                                     $String .= '" class="btn">View Book</a>';
                                     $String .= '</div></div>';
@@ -377,7 +377,7 @@ if (!isset($_SESSION['staff'])) {
                                     $String .= $row['title'];
                                     //buttton for view book
                                     //note: change from admin library to admin borrow location for viewing
-                                    $String .= '</p><a href="/ProjectSIA2/admin/Admin_ReadBorrow.php?book_id=';
+                                    $String .= '</p><a href="/ProjectSIA2/staff/staff_ViewBook.php?book_id=';
                                     $String .= $row['book_id'];
                                     $String .= '" class="btn">View Book</a>';
                                     $String .= '</div></div>';

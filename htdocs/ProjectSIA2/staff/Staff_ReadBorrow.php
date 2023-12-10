@@ -5,10 +5,11 @@ $book_id = isset($_GET['book_id']) ? $_GET['book_id'] : '';
 
 
 
-//$date = date('Y-m-d');
+$date = date('Y-m-d');
 
 $timezone = new DateTimeZone('Asia/Tokyo');
 $date = new DateTime('now', $timezone);
+echo $date->format('Y-m-d');
 
 
 ?>
@@ -33,7 +34,7 @@ $date = new DateTime('now', $timezone);
         <h3 class="center">Are you sure you will borrow this book?
             <?php //echo $book_id; ?>
         </h3>
-        <form action="verifyBorrow.php" method="GET">
+        <form action="staff_VerifyBorrow.php" method="GET">
 
             <div class="row">
                 <div class="col s6">
@@ -61,7 +62,7 @@ $date = new DateTime('now', $timezone);
                 <div class="col s3">
                     <span class="flow-text">
                         <label>Select A Date</label>
-                        <input type="date" id="date" name="date" min="<?php echo $date->format('Y-m-'); echo $date->format('d')+1;  ?>" max="2025-12-31">
+                        <input type="date" id="date" name="date" min="<?php echo $date = date('Y-m-d'); ?>" max="2025-12-31">
                     </span>
                     <!-- specify date to borrow -->
 
@@ -83,12 +84,14 @@ $date = new DateTime('now', $timezone);
                         <span>Agree terms and conditions</span>
                     </label>
                     <input type="submit" class="btn" name="submit" style="margin-left:10px">
-        <a href="admin_ViewBook.php?book_id=<?php echo $book_id; ?>" class="btn red">Back</a>
+                    <a href="staff_ViewBook.php?book_id=<?php echo $book_id; ?>" class="btn red">back</a>
+        
                     
                 </div>
 
             </div>
         </form>
+      
     </div>
 
     <!-- view pdf using modal -->

@@ -163,7 +163,7 @@ if (isset($_REQUEST['submit'])) {
 
     <!-- Page Layout here -->
     <div class="row">
-      <div class="card-panel white lighten-1 right" style="width:150vh; height:10vh; margin-right:5vh; margin-top:5vh">
+      <div class="card-panel white lighten-1 right" style="width:150vh; height:10vh; margin-right:5vh;">
         <h3 class="center" style="margin-top:-10px;">New Books</h3>
 
         <!-- labels and button -->
@@ -205,7 +205,7 @@ if (isset($_REQUEST['submit'])) {
 
       </div>
       <div class="col s3">
-        <div class="card-panel teal lighten-2" style="height:70vh; margin-top: 15vh; float:center">
+        <div class="card-panel teal lighten-2" style="height:70vh; float:center">
           <!-- This is display picture -->
 
           <?php

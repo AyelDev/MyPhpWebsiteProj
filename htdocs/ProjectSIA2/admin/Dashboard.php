@@ -21,12 +21,6 @@ if (!isset($_SESSION['admin'])) {
 </head>
 
 <?php
-$accounts = 0;
-$sql = "SELECT * FROM user UNION SELECT * from admin UNION SELECT * FROM staff";
-$results = mysqli_query($conn, $sql);
-while($row=mysqli_fetch_assoc($results)){
-    $accounts++;
-}
 $admin = 0;
 $sql = "SELECT * FROM admin";
 $results = mysqli_query($conn, $sql);
@@ -46,6 +40,21 @@ $sql = "SELECT * FROM user";
 $results = mysqli_query($conn, $sql);
 while ($row = mysqli_fetch_assoc($results)) {
     $user++;
+}
+
+
+$totalBooks = 0;
+$sql = "SELECT book_id FROM admin_staff_library UNION SELECT book_id FROM user_library";
+$results = mysqli_query($conn, $sql);
+while($row = mysqli_fetch_assoc($results)){
+    $totalBooks++;
+}
+
+$borrowedBooks = 0;
+$sql = "SELECT book_id FROM admin_staff_library";
+$results = mysqli_query($conn, $sql);
+while($row = mysqli_fetch_assoc($results)){
+    $borrowedBooks++;
 }
 ?>
 
@@ -111,9 +120,6 @@ while ($row = mysqli_fetch_assoc($results)) {
 
                 <div class="row">
                     <div class="col s11 m5 l3 card">
-                        <h4 class="teal-text center">Total No. of Accounts :
-                            <?php echo $accounts; ?>
-                        </h4>
                         <h4 class="teal-text center">No. of Admin :
                             <?php echo $admin; ?>
                         </h4>
@@ -126,7 +132,7 @@ while ($row = mysqli_fetch_assoc($results)) {
                     </div>
                     <div class="col s11 m5 l3 card">
                         <h4 class="teal-text center">No. of Books :
-                            <?php //echo $staff; ?>
+                            <br><?php echo $borrowedBooks . "/" . $totalBooks; ?>
                         </h4>
 
                     </div>

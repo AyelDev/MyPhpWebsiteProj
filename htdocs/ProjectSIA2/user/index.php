@@ -158,7 +158,7 @@ while ($row = mysqli_fetch_array($result)) {
                             $String .= $row['title'];
                             //buttton for return book
                             //note: change from admin library to admin borrow location for viewing
-                            $String .= '</p><a href="/ProjectSIA2/admin/Return_Admin.php?book_id=';
+                            $String .= '</p><a href="/ProjectSIA2/user/Return_Book.php?book_id=';
                             $String .= $row['book_id'];
                             $String .= '" class="btn">Return Book</a>';
                             $String .= '</div></div>';
@@ -210,7 +210,7 @@ while ($row = mysqli_fetch_array($result)) {
                             $String .= $row['title'];
                             //buttton for return book
                             //note: change from admin library to admin borrow location for viewing
-                            $String .= '</p><a href="/ProjectSIA2/admin/Return_Admin.php?book_id=';
+                            $String .= '</p><a href="/ProjectSIA2/user/Return_Book.php?book_id=';
                             $String .= $row['book_id'];
                             $String .= '" class="btn">Return Book</a>';
                             $String .= '</div></div>';
@@ -261,7 +261,7 @@ while ($row = mysqli_fetch_array($result)) {
                             $String .= $row['title'];
                             //buttton for return book
                             //note: change from admin library to admin borrow location for viewing
-                            $String .= '</p><a href="/ProjectSIA2/admin/Return_Admin.php?book_id=';
+                            $String .= '</p><a href="/ProjectSIA2/user/Return_Book.php?book_id=';
                             $String .= $row['book_id'];
                             $String .= '" class="btn">Return Book</a>';
                             $String .= '</div></div>';
@@ -310,7 +310,7 @@ while ($row = mysqli_fetch_array($result)) {
                             $String .= $row['title'];
                             //buttton for return book
                             //note: change from admin library to admin borrow location for viewing
-                            $String .= '</p><a href="/ProjectSIA2/admin/Return_Admin.php?book_id=';
+                            $String .= '</p><a href="/ProjectSIA2/user/Return_Book.php?book_id=';
                             $String .= $row['book_id'];
                             $String .= '" class="btn">Return Book</a>';
                             $String .= '</div></div>';
@@ -361,7 +361,7 @@ while ($row = mysqli_fetch_array($result)) {
                             $String .= $row['title'];
                             //buttton for return book
                             //note: change from admin library to admin borrow location for viewing
-                            $String .= '</p><a href="/ProjectSIA2/admin/Return_Admin.php?book_id=';
+                            $String .= '</p><a href="/ProjectSIA2/user/Return_Book.php?book_id=';
                             $String .= $row['book_id'];
                             $String .= '" class="btn">Return Book</a>';
                             $String .= '</div></div>';
