@@ -88,7 +88,7 @@ while($row = mysqli_fetch_assoc($results)){
                         <li><a style="width:25vh" href="adminCreateAccount.php">Add User</a></li><br>
                         <li><a style="width:25vh" href="Table.php">Tables</a></li><br>
                         <li><a style="width:25vh" href="Dashboard.php">Dashboard</a></li><br>
-
+                        <li><a style="width:25vh" href="adminBorrowList.php">Borrow List</a></li><br>
                         <!-- Dropdown Trigger -->
                         <li><a class='dropdown-trigger btn' style="width:20vh" href='#'
                                 data-target='dropdown1'>Courses</a></li>

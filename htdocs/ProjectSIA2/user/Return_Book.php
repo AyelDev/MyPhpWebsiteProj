@@ -15,11 +15,11 @@ $book_id = isset($_GET['book_id']) ? $_GET['book_id'] : '';
 $sql = "SELECT * FROM user_library WHERE book_id = '$book_id'";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
-$date = $row['borrowed_date'];
+$returnDate = $row['return_date'];
 
 
 $timezone = new DateTimeZone('Asia/Tokyo');
-$datenow = new DateTime($date);
+$datenow = new DateTime($returnDate);
 
 ?>
 

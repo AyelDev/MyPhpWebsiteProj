@@ -27,14 +27,13 @@ $date = new DateTime('now', $timezone);
 <body>
 
     <div class="container">
-<p class="red-text">
+<h5 class="red-text center">
     <?php echo isset($_GET['error']) ? $_GET['error'] : ''; ?>
-</p>
+</h5>
         <h3 class="center">Are you sure you will borrow this book?
-            <?php //echo $book_id; ?>
         </h3>
         <form action="verifyBorrow.php" method="GET">
-
+        
             <div class="row">
                 <div class="col s6">
                     <span class="flow-text">
@@ -60,8 +59,13 @@ $date = new DateTime('now', $timezone);
 
                 <div class="col s3">
                     <span class="flow-text">
-                        <label>Select A Date</label>
-                        <input type="date" id="date" name="date" min="<?php echo $date->format('Y-m-'); echo $date->format('d')+1;  ?>" max="2025-12-31">
+                        <!-- <label>Select A Date</label> -->
+                       <!-- <input type="date" id="date" name="date" min="<?php //echo $date->format('Y-m-'); echo $date->format('d')+1;  ?>" max="2025-12-31">  -->
+                       
+                       <!-- date borrowed -->
+                       <input type="text" name="dateNow" value="<?php echo $date = date('Y-m-d'); ?>" hidden>
+                       <!-- books to be return (date) -->
+                       <input type="text" name="date" value="<?php echo $date = date('Y-m-'); echo $date = date('d')+4; ?>" hidden>
                     </span>
                     <!-- specify date to borrow -->
 

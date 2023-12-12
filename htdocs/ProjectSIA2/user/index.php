@@ -31,7 +31,7 @@ while ($row = mysqli_fetch_array($result)) {
 
 <head>
     <link type="text/css" rel="stylesheet" href="/ProjectSIA2/materialize/css/materialize.css"
-        media="screen,projection" />
+        media="screen,projection"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User</title>
@@ -93,12 +93,13 @@ while ($row = mysqli_fetch_array($result)) {
 
         <nav>
             <div class="nav-wrapper teal lighten-3">
-                <a style="margin: 20px" class="white-text">
-                    <?php echo 'Hello ' . $users; ?>
+            <a style="margin: 20px" class="white-text">
+                    
                 </a>
 
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="Profile.html">Profile</a></li>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="/ProjectSIA2/user/index.php"><?php echo 'Hello ' . $users; ?></a></li>
+                    <li><a href="/ProjectSIA2/user/bookList.php">List of Books</a></li>
                     <li><a href="/ProjectSIA2/Logout.php">Logout</a></li>
                 </ul>
             </div>
@@ -142,8 +143,8 @@ while ($row = mysqli_fetch_array($result)) {
                         $sql = "SELECT * FROM user_library WHERE course_name = 'BSIT' AND user_id = '$userResultID'";
                         $query = mysqli_query($conn, $sql);
                         while ($row = mysqli_fetch_assoc($query)) {
-                            $String = '<div class="col s4"><div class="booksBsit">';
-                            $String .= '<div class="card-panel hoverable black-text"';
+                            $String = '<div class=""><div class="booksBsit">';
+                            $String .= '<div class="card-panel col s4 hoverable black-text"';
                             $String .= 'onclick="location.href=';
                             $String .= "'";
                             $String .= '/ProjectSIA2/admin/adminStaffPdf/';
@@ -194,8 +195,8 @@ while ($row = mysqli_fetch_array($result)) {
                         $sql = "SELECT * FROM user_library WHERE course_name = 'BSDEVCOM' AND user_id = '$userResultID'";
                         $query = mysqli_query($conn, $sql);
                         while ($row = mysqli_fetch_assoc($query)) {
-                            $String = '<div class="col s4"><div class="booksDevcom">';
-                            $String .= '<div class="card-panel hoverable black-text"';
+                            $String = '<div class=""><div class="booksDevcom">';
+                            $String .= '<div class="card-panel col s4 hoverable black-text"';
                             $String .= 'onclick="location.href=';
                             $String .= "'";
                             $String .= '/ProjectSIA2/admin/adminStaffPdf/';
@@ -245,8 +246,8 @@ while ($row = mysqli_fetch_array($result)) {
                         $sql = "SELECT * FROM user_library WHERE course_name = 'BSHM' AND user_id = '$userResultID'";
                         $query = mysqli_query($conn, $sql);
                         while ($row = mysqli_fetch_assoc($query)) {
-                            $String = '<div class="col s4"><div class="booksHtlManagement">';
-                            $String .= '<div class="card-panel hoverable black-text"';
+                            $String = '<div class=""><div class="booksHtlManagement">';
+                            $String .= '<div class="card-panel col s4 hoverable black-text"';
                             $String .= 'onclick="location.href=';
                             $String .= "'";
                             $String .= '/ProjectSIA2/admin/adminStaffPdf/';
@@ -294,8 +295,8 @@ while ($row = mysqli_fetch_array($result)) {
                         $sql = "SELECT * FROM user_library WHERE course_name = 'BEED' AND user_id = '$userResultID'";
                         $query = mysqli_query($conn, $sql);
                         while ($row = mysqli_fetch_assoc($query)) {
-                            $String = '<div class="col s4"><div class="booksEDUC">';
-                            $String .= '<div class="card-panel hoverable black-text"';
+                            $String = '<div class=""><div class="booksEDUC">';
+                            $String .= '<div class="card-panel col s4 hoverable black-text"';
                             $String .= 'onclick="location.href=';
                             $String .= "'";
                             $String .= '/ProjectSIA2/admin/adminStaffPdf/';
@@ -345,8 +346,8 @@ while ($row = mysqli_fetch_array($result)) {
                         $sql = "SELECT * FROM user_library WHERE course_name = 'BSTM' AND user_id = '$userResultID'";
                         $query = mysqli_query($conn, $sql);
                         while ($row = mysqli_fetch_assoc($query)) {
-                            $String = '<div class="col s4"><div class="booksTrmManagement">';
-                            $String .= '<div class="card-panel hoverable black-text"';
+                            $String = '<div class=""><div class="booksTrmManagement">';
+                            $String .= '<div class="card-panel col s4 hoverable black-text"';
                             $String .= 'onclick="location.href=';
                             $String .= "'";
                             $String .= '/ProjectSIA2/admin/adminStaffPdf/';

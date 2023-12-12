@@ -4,7 +4,7 @@ include "../config.php";
 $book_id = isset($_GET['book_id']) ? $_GET['book_id'] : '';
 
 //containing GET into session to avoid variable errors
-echo $_SESSION['book_id'] = $book_id;
+$_SESSION['book_id'] = $book_id;
 
 $sql = "SELECT * FROM admin_staff_library WHERE book_id = '$book_id'";
 $result = mysqli_query($conn, $sql);

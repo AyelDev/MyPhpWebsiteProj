@@ -9,7 +9,7 @@ $date = date('Y-m-d');
 
 $timezone = new DateTimeZone('Asia/Tokyo');
 $date = new DateTime('now', $timezone);
-echo $date->format('Y-m-d');
+$date->format('Y-m-d');
 
 
 ?>
@@ -61,8 +61,9 @@ echo $date->format('Y-m-d');
 
                 <div class="col s3">
                     <span class="flow-text">
-                        <label>Select A Date</label>
-                        <input type="date" id="date" name="date" min="<?php echo $date = date('Y-m-d'); ?>" max="2025-12-31">
+                        <!-- <label>Select A Date</label> -->
+                        <!-- <input type="date" id="date" name="date" min="<?php// echo $date = date('Y-m-d'); ?>" max="2025-12-31"> -->
+                    <input type="text" name="date" value="<?php echo $date->format('Y-m-'); echo $date->format('d')+4; ?>" hidden>
                     </span>
                     <!-- specify date to borrow -->
 

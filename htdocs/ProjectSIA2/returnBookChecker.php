@@ -9,9 +9,9 @@ $sql = "SELECT * FROM user_library";
 $result = mysqli_query($conn, $sql);
 while($row = mysqli_fetch_assoc($result)){
 //format borrow date
-$dateBorrow = new DateTime($row['borrowed_date']);
-$dateBorrow->format('Y-m-d');
-if($date < $dateBorrow){
+$returnDate = new DateTime($row['return_date']);
+$returnDate->format('Y-m-d');
+if($date < $returnDate){
 }else{
 "return it";
 $book_id =$row["book_id"] . "<br>";

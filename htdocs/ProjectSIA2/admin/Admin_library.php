@@ -107,7 +107,7 @@ if (!isset($_SESSION['admin'])) {
                         <li><a style="width:25vh" href="adminCreateAccount.php">Add User</a></li><br>
                         <li><a style="width:25vh" href="Table.php">Tables</a></li><br>
                         <li><a style="width:25vh" href="Dashboard.php">Dashboard</a></li><br>
-
+                        <li><a style="width:25vh" href="adminBorrowList.php">Borrow List</a></li><br>
                         <!-- Dropdown Trigger -->
                         <li><a class='dropdown-trigger btn' style="width:20vh" href='#'
                                 data-target='dropdown1'>Courses</a></li>
@@ -161,8 +161,8 @@ if (!isset($_SESSION['admin'])) {
                                     $sql = "SELECT * FROM admin_staff_library WHERE course_name = 'BSIT'";
                                     $query = mysqli_query($conn, $sql);
                                     while ($row = mysqli_fetch_assoc($query)) {
-                                        $String = '<div class=""><div class="booksBsit">';
-                                        $String .= '<div class="card-panel col s4 hoverable black-text"';
+                                        $String = '<div class="" style="width:40rem"><div class="booksBsit">';
+                                        $String .= '<div class="card-panel col s4 hoverable black-text" style="margin:3px"';
                                         $String .= 'onclick="location.href=';
                                         $String .= "'";
                                         $String .= '/ProjectSIA2/admin/adminStaffPdf/';
@@ -213,8 +213,8 @@ if (!isset($_SESSION['admin'])) {
                                     $sql = "SELECT * FROM admin_staff_library WHERE course_name = 'BSDEVCOM'";
                                     $query = mysqli_query($conn, $sql);
                                     while ($row = mysqli_fetch_assoc($query)) {
-                                        $String = '<div class="col s4"><div class="booksDevcom">';
-                                        $String .= '<div class="card-panel hoverable black-text"';
+                                        $String = '<div class="" style="width:40rem"><div class="booksDevcom">';
+                                        $String .= '<div class="card-panel col s4 hoverable black-text" style="margin:3px"';
                                         $String .= 'onclick="location.href=';
                                         $String .= "'";
                                         $String .= '/ProjectSIA2/admin/adminStaffPdf/';
@@ -266,8 +266,8 @@ if (!isset($_SESSION['admin'])) {
                                 $sql = "SELECT * FROM admin_staff_library WHERE course_name = 'BSHM'";
                                 $query = mysqli_query($conn, $sql);
                                 while ($row = mysqli_fetch_assoc($query)) {
-                                    $String = '<div class="col s4"><div class="booksHtlManagement">';
-                                    $String .= '<div class="card-panel hoverable black-text"';
+                                    $String = '<div class="" style="width:40rem"><div class="booksHtlManagement">';
+                                    $String .= '<div class="card-panel col s4 hoverable black-text" style="margin:3px"';
                                     $String .= 'onclick="location.href=';
                                     $String .= "'";
                                     $String .= '/ProjectSIA2/admin/adminStaffPdf/';
@@ -317,8 +317,8 @@ if (!isset($_SESSION['admin'])) {
                                 $sql = "SELECT * FROM admin_staff_library WHERE course_name = 'BEED'";
                                 $query = mysqli_query($conn, $sql);
                                 while ($row = mysqli_fetch_assoc($query)) {
-                                    $String = '<div class="col s4"><div class="booksEDUC">';
-                                    $String .= '<div class="card-panel hoverable black-text"';
+                                    $String = '<div class="" style="width:40rem"><div class="booksEDUC">';
+                                    $String .= '<div class="card-panel col s4 hoverable black-text" style="margin:3px"';
                                     $String .= 'onclick="location.href=';
                                     $String .= "'";
                                     $String .= '/ProjectSIA2/admin/adminStaffPdf/';
@@ -368,8 +368,8 @@ if (!isset($_SESSION['admin'])) {
                                 $sql = "SELECT * FROM admin_staff_library WHERE course_name = 'BSTM'";
                                 $query = mysqli_query($conn, $sql);
                                 while ($row = mysqli_fetch_assoc($query)) {
-                                    $String = '<div class="col s4"><div class="booksTrmManagement">';
-                                    $String .= '<div class="card-panel hoverable black-text"';
+                                    $String = '<div class="" style="width:40rem"><div class="booksTrmManagement">';
+                                    $String .= '<div class="card-panel col s4 hoverable black-text" style="margin:3px"';
                                     $String .= 'onclick="location.href=';
                                     $String .= "'";
                                     $String .= '/ProjectSIA2/admin/adminStaffPdf/';
