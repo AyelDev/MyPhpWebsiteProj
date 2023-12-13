@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.2:3307
--- Generation Time: Nov 27, 2023 at 09:39 AM
+-- Generation Time: Dec 13, 2023 at 02:39 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -83,6 +83,13 @@ CREATE TABLE `staff` (
   `name` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `staff`
+--
+
+INSERT INTO `staff` (`staff_id`, `username`, `password`, `name`) VALUES
+(42, 'staff', '123', 'staffAriel');
+
 -- --------------------------------------------------------
 
 --
@@ -118,17 +125,10 @@ CREATE TABLE `user_library` (
   `published` varchar(50) NOT NULL,
   `cover` varchar(50) NOT NULL,
   `file` varchar(50) NOT NULL,
-  `course_name` varchar(50) NOT NULL
+  `course_name` varchar(50) NOT NULL,
+  `borrowed_date` date NOT NULL,
+  `return_date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `user_library`
---
-
-INSERT INTO `user_library` (`user_id`, `book_id`, `title`, `author`, `published`, `cover`, `file`, `course_name`) VALUES
-(95, 116, 'Learn Java For Web Development', 'asdadasdassd', 'asdadaa', 'Book2.jpg', 'Learn_Java_for_Web_Development.pdf', 'BSIT'),
-(96, 117, 'A Programmers Guide to the Mind', 'Lorin Friesen', '2000', 'Book1.jpg', 'A_Programmers_Guide_to_the_Mind.pdf', 'BSIT'),
-(95, 118, 'Web animation', 'Julian Shapiro', '2000', 'Book33.jpg', 'web_animation.pdf', 'BSHM');
 
 --
 -- Indexes for dumped tables
@@ -184,7 +184,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `admin_staff_library`
 --
 ALTER TABLE `admin_staff_library`
-  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=119;
+  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=157;
 
 --
 -- AUTO_INCREMENT for table `bin`
@@ -196,7 +196,7 @@ ALTER TABLE `bin`
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `staff_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `staff_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `user`
