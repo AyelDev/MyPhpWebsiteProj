@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.2:3307
--- Generation Time: Dec 13, 2023 at 02:39 AM
+-- Generation Time: Dec 13, 2023 at 11:05 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -57,6 +57,14 @@ CREATE TABLE `admin_staff_library` (
   `course_name` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `admin_staff_library`
+--
+
+INSERT INTO `admin_staff_library` (`book_id`, `title`, `author`, `published`, `cover`, `file`, `course_name`) VALUES
+(157, 'Java for Web Development', 'Vishal Layka', '2001', 'Book2.jpg', 'Learn_Java_for_Web_Development.pdf', 'BSIT'),
+(158, 'A Programmers Guide to the Mind', 'Lorin Friesen', '2018', 'Book1.jpg', 'A_Programmers_Guide_to_the_Mind.pdf', 'BSIT');
+
 -- --------------------------------------------------------
 
 --
@@ -98,9 +106,9 @@ INSERT INTO `staff` (`staff_id`, `username`, `password`, `name`) VALUES
 
 CREATE TABLE `user` (
   `user_id` int(11) NOT NULL,
-  `username` varchar(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
   `password` varchar(100) NOT NULL,
-  `name` varchar(11) NOT NULL
+  `name` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -184,25 +192,25 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `admin_staff_library`
 --
 ALTER TABLE `admin_staff_library`
-  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=157;
+  MODIFY `book_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=160;
 
 --
 -- AUTO_INCREMENT for table `bin`
 --
 ALTER TABLE `bin`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `staff_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `staff_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

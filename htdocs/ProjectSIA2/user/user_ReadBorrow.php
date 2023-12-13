@@ -78,7 +78,7 @@ $file = $row['file'];
                             </div>
 
 
-                            <input type="submit" class="btn" name="submit" value="Barrow" style="width:100%">
+                            <input type="submit" class="btn" name="submit" value="Borrow" style="width:100%">
                             <a href="bookList.php" class="btn red" style="width:100%; margin-top:2%;">back</a>
                         </div>
                     </form>

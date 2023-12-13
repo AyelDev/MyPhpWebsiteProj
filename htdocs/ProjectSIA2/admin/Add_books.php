@@ -36,7 +36,7 @@ if (isset($_REQUEST['submit'])) {
       $query = mysqli_query($conn, $sql);
       if (move_uploaded_file($tempname, $folder)) {
         if (move_uploaded_file($tempname1, $folder1)) {
-          echo "<h2>File uploaded successfully</h2>";
+          echo "<h3>File uploaded successfully</h3>";
         } else {
           echo "<h2>File failed to upload</h2>";
         }

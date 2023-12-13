@@ -32,7 +32,7 @@ $user_id = $rows['user_id'];
 </head>
 
 <body>
-    <h4 class="blue-text center">List of Books</h4>
+    <h4 class="blue-text center">List of Books Available</h4>
     <div class="container">
 
 

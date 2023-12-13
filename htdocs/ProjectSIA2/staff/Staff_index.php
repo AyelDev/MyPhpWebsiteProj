@@ -88,7 +88,7 @@ if (!isset($_SESSION['staff'])) {
         <nav>
             <div class="nav-wrapper white">
                 <div class="row">
-                    <div class="col s2">
+                    <div class="col s5">
                         <i class="black-text left">
                             <?php echo isset($_SESSION['staff']) ? "Hello Staff " . $_SESSION['staff'] : ''; ?>
                         </i>

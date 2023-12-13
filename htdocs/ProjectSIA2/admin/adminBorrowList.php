@@ -32,9 +32,9 @@ if (!isset($_SESSION['admin'])) {
         <thead>
           <tr>
               <th>Name</th>
-              <th>Item Name</th>
-              <th>Item Borrowed</th>
-              <th>Item Return</th>
+              <th>Book Name</th>
+              <th>Date Borrowed</th>
+              <th>Date Return</th>
           </tr>
         </thead>
 
